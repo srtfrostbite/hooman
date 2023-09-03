@@ -1,16 +1,27 @@
 // import Avatar from "./components/Avatar";
-import ProfileCard from "./components/ProfileCard";
+// import ProfileCard from "./components/ProfileCard";
+// import Item from "./components/Item";
+import PeopleList from "./components/PeopleList";
+
+const people = [
+  "Creola Katherine Johnson: mathematician",
+  "Mario José Molina-Pasquel Henríquez: chemist",
+  "Mohammad Abdus Salam: physicist",
+  "Percy Lavon Julian: chemist",
+  "Subrahmanyan Chandrasekhar: astrophysicist",
+];
 
 function App() {
   return (
-    <div className="App">
-      {/* <Avatar size={200} username="ali" />
-      <Avatar size={150} username="ali2" />
-      <Avatar size={100} username="ali3" />
-      <Avatar size={50} username="ali4" />
-      <Avatar size={25} username="ali5" /> */}
-      <ProfileCard lastName="nili" firstName="ali" />
-    </div>
+    <section>
+      {/* <h1>Sally Ride's Packing List</h1>
+      <ul>
+        <Item isPacked={true} name="Space suit" />
+        <Item isPacked={true} name="Helmet with a golden leaf" />
+        <Item isPacked={false} name="Photo of Tam" />
+      </ul> */}
+      <PeopleList peoples={people} />
+    </section>
   );
 }
 
